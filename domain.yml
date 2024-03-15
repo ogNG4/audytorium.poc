@@ -1,0 +1,24 @@
+version: "3.1"
+actions:
+  - action_proglang
+  - utter_goodbye
+  - utter_greet
+  - utter_bot_challenge
+entities:
+  - proglang
+intents:
+  - talk_code
+  - greet
+  - goodbye
+  - bot_challenge
+responses:
+  utter_goodbye:
+    - text: Żegnaj!
+    - text: Do zobaczenia!
+    - text: Do widzenia!
+  utter_greet:
+    - text: Cześć! W czym mogę pomóc?
+    - text: Witaj! W czym mogę pomóc?
+  utter_bot_challenge:
+    - text: "Jestem botem, ale mogę Ci pomóc. W czym mogę pomóc?"
+    - text: "Tak, jestem botem, ale mogę Ci pomóc. W czym mogę pomóc?"

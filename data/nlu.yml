@@ -1,0 +1,20 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - cześć
+    - witaj
+    - dzień dobry
+    - dobry wieczór
+- intent: goodbye
+  examples: |
+    - do widzenia
+    - żegnaj
+    - do zobaczenia
+    - do zobaczenia później
+- intent: bot_challenge
+  examples: |
+    - czy jesteś botem?
+    - czy jesteś człowiekiem?
+    - czy rozmawiam z botem?
+    - czy rozmawiam z człowiekiem?
