@@ -1,24 +1,25 @@
 version: "3.1"
 actions:
-  - action_proglang
-  - utter_goodbye
-  - utter_greet
-  - utter_bot_challenge
-entities:
-  - proglang
+  - action_save_name
 intents:
-  - talk_code
   - greet
   - goodbye
   - bot_challenge
+  - affirm
+  - inform
 responses:
   utter_goodbye:
     - text: Żegnaj!
     - text: Do zobaczenia!
     - text: Do widzenia!
   utter_greet:
-    - text: Cześć! W czym mogę pomóc?
-    - text: Witaj! W czym mogę pomóc?
+    - text: Cześć! Pomogę ci przeprowadzić audyt.
+    - text: Witaj! Pomogę ci przeprowadzić audyt.python 
   utter_bot_challenge:
-    - text: "Jestem botem, ale mogę Ci pomóc. W czym mogę pomóc?"
-    - text: "Tak, jestem botem, ale mogę Ci pomóc. W czym mogę pomóc?"
+    - text: "Jestem botem, ale mogę Ci pomóc przeprowadzić audyt."
+    - text: "Tak, jestem botem, ale mogę Ci pomóc w przeprowadzeniu audytu w twojej firmie."
+  utter_ask_name:
+    - text: "Jak nazywa się twoja firma?"
+
+entities:
+  - name

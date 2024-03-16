@@ -4,7 +4,7 @@ import spacy
 
 if __name__ == "__main__":
     nlp = spacy.load("en_core_web_sm")
-    rules_file = 'matcher-rules/proglang.jsonl'
+    rules_file = './matcher-rules/proglang.jsonl'
     print(f"Will now create model for {rules_file}.")
     ruler = nlp.add_pipe('entity_ruler')
     ruler.from_disk(rules_file)

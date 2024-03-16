@@ -1,20 +1,53 @@
 version: "3.1"
 nlu:
-- intent: greet
-  examples: |
-    - cześć
-    - witaj
-    - dzień dobry
-    - dobry wieczór
-- intent: goodbye
-  examples: |
-    - do widzenia
-    - żegnaj
-    - do zobaczenia
-    - do zobaczenia później
-- intent: bot_challenge
-  examples: |
-    - czy jesteś botem?
-    - czy jesteś człowiekiem?
-    - czy rozmawiam z botem?
-    - czy rozmawiam z człowiekiem?
+  - intent: greet
+    examples: |
+      - cześć
+      - witaj
+      - dzień dobry
+      - dobry wieczór
+      - siema
+      - hej
+      - hejka
+      - siemka
+      - witam
+      - witam serdecznie
+
+  - intent: goodbye
+    examples: |
+      - do widzenia
+      - żegnaj
+      - do zobaczenia
+      - do zobaczenia później
+      - do zobaczenia jutro
+      - do zobaczenia wkrótce
+
+  - intent: bot_challenge
+    examples: |
+      - czy jesteś botem?
+      - czy jesteś człowiekiem?
+      - czy rozmawiam z botem?
+      - czy rozmawiam z człowiekiem?
+      - kim jesteś?
+
+  - intent: affirm
+    examples: |
+      - tak
+      - zgadza się
+      - oczywiście
+      - jasne
+      - pewnie
+      - dokładnie
+
+  - intent: deny
+    examples: |
+      - nie
+      - nie zgadza się
+      - nie jestem pewien
+
+  - intent: inform
+    examples: |
+      - moja firma to [Codex](name)
+      - [Drutex](name) jest moją firmą
+      - [Kruk](name) to moja firma
+      - moja firma nazywa się [Kruk](name)

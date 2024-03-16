@@ -1,26 +1,26 @@
 version: "3.1"
+
 stories:
-- story: just code
-  steps:
-  - intent: talk_code
-  - action: action_proglang
-- story: say goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
-- story: interactive_story
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: talk_code
-    entities:
-    - proglang: python
-  - action: action_proglang
-- story: bot interaction
-  steps:
-  - intent: greet
-  - action: utter_bot_challenge
-  - intent: bot_challenge
-  - action: utter_bot_challenge
-  - intent: goodbye
-  - action: utter_goodbye
+  # - story: greet and say goodbye
+  #   steps:
+  #   - intent: greet
+  #   - action: utter_greet
+  #   - intent: goodbye
+  #   - action: utter_goodbye
+
+  # - story: challenge bot and respond
+  #   steps:
+  #   - intent: bot_challenge
+  #   - action: utter_bot_challenge
+
+  - story: test
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_ask_name
+      - intent: inform
+        entities:
+          - name: "name"
+      - action: action_save_name
+      # - intent: goodbye
+      # - action: utter_goodbye
